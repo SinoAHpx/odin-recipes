@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mdui-theme-dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Odin recipes</title>
+        <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     </head>
     <body>
-        <h1>Odin Recipes</h1>
-        <a href="./recipes/braised-pork.html" target="_blank">Braised pork</a>
+        <div class="mdui-prose">
+            <h1>Odin Recipes</h1>
+        </div>
+        <br>
+        <mdui-card class="main">
+            <mdui-list>
+                <mdui-list-item headline="Braised Pork" href="./recipes/braised-pork.html" target="_blank"></mdui-list-item>
+                <mdui-list-item headline="Chicken Enchilada Slow Cooker Soup" href="./recipes/braised-pork.html" target="_blank"></mdui-list-item>
+                <mdui-list-item headline="Slow Cooker Texas Smoked Beef Brisket" href="./recipes/braised-pork.html" target="_blank"></mdui-list-item>
+            </mdui-list>
+        </mdui-card>
+
+        <mdui-button full-width href="https://www.allrecipes.com/" target="_blank" variant="text">Looking for more?</mdui-button>
     </body>
 </html>
